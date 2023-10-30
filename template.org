@@ -1,0 +1,82 @@
+-*- eval: (org-cv-local-variables)  -*-
+# Latex variables
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [8pt,a4paper]
+# Hide page number
+#+LaTeX_HEADER: \pagenumbering{gobble}
+
+# Setup packages to be used
+#+LaTeX_HEADER: \usepackage{array}
+#+LaTeX_HEADER: \usepackage[margin=2cm]{geometry}
+
+# Table aesthetics
+# #+LaTeX_HEADER: \definecolor{lightgray}{gray}{0.8}
+#+LaTeX_HEADER: \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+#+LaTeX_HEADER: \newcolumntype{R}{p{0.78\textwidth}}
+# #+LaTeX_HEADER: \newcommand\VRule\vrule width 0.5pt}
+#+LaTeX_HEADER: \renewcommand{\hline}{}
+
+# Indentation
+#+LaTeX_HEADER: \setlength{\parindent}{0pt}
+
+# Subtitles
+# #+latex_header: \titleformat{\section}{\bfseries}{}{0em}{}[\titlerule]
+# #+LaTeX_HEADER: \titlespacing{\section}{0pt}{5pt}{5pt}
+
+# Header
+#+LaTeX_HEADER: \renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor} \vspace{5pt} \smallbreak \thetitle \end{center}}
+
+# CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+#+CVSTYLE: banking
+# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+#+CVCOLOR: black
+#+TITLE:  +91-7993110170
+#+AUTHOR: Sameer Gupta
+#+EMAIL: jasitis@gmail.com
+#+OPTIONS: email:t
+#+OPTIONS: toc:nil num:nil
+* Education
+
+- B.Tech, IIT-Bombay (2006-11)
+
+* Skills
+
+ Given specified resources for specific goals, I have and can work with a small team and\\
+ drive the development to meet the specifications, constrains and agreed  upon resources .
+* Relevant Experience
+
+#+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
+   |---------------+----------------------------------------------------------------------------------|
+   | 07/2021-      | *Senior Haskell dev*, Konma -Chennai                                             |
+   |               | I worked with team to pitch for then ideascale .                                 |
+   |               | funding round and submitted my independent proposal                              |
+   |               | in the next on with the founder .                                                |
+   |               | I used SBC, GPG to focus on network admin, nix                                   |
+   |               | for  reproduible builds and did haskell code review to                           |
+   |               | assure type correctness of code.                                                 |
+   |               | I listed many issue and prepared many solutions for                              |
+   |               | Cardano.                                                                         |
+   |---------------+----------------------------------------------------------------------------------|
+   | 12/07-11/2021 | Prototype R&D; New York Based Blockchain cotractor.                              |
+   |               | I  Worked on bit blasting and decided to opt for retiming instead of pipelining in SBC ARM and RISC V. |
+   |               | along with local procuremet and asssembly line testing.                          |
+   |               |                                                                                  |
+   |---------------+----------------------------------------------------------------------------------|
+
+* Languages and Tools
+
+#+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
+   |----------------------+--------------------------------------------------------------------+---+---|
+   | Nix/NixOS            | Repl, devenv, subshell,devshell, flake, modules.                   |   |   |
+   |                      | Infra and network. On the way to build for SBC.                    |   |   |
+   |----------------------+--------------------------------------------------------------------+---+---|
+   | Bash and Emacslisp   | For CI/CD,Magit-ops.                                               |   |   |
+   |                      | I have demonadtrated and pinned this on My Github                  |   |   |
+   |                      | @carnotweat                                                        |   |   |
+   |----------------------+--------------------------------------------------------------------+---+---|
+   | Type correct haskell | For Haskell-nix builds, contribution,code-review                   |   |   |
+   |----------------------+--------------------------------------------------------------------+---+---|
+   | Elisp                | I am confortable at calling, applying functions from any point     |   |   |
+   |                      | I and writing a emacs dsl, to make its keybinds my to my i3-config |   |   |
+   |----------------------+--------------------------------------------------------------------+---+---|
+
