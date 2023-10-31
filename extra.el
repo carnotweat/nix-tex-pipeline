@@ -10,3 +10,9 @@
   (setq-local org-latex-with-hyperref nil)
   (setq-local org-latex-default-packages-alist nil)
   (olivetti-mode -1))
+;; a latex styl file indeed
+(with-eval-after-load 'org
+   (add-to-list 'org-latex-classes
+                '("resume"
+                  "\\documentclass[letterpaper]{scrartcl}"
+                  ("\\section{%s}" . "\\section*{%s}"))))

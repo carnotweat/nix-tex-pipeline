@@ -1,4 +1,20 @@
--*- eval: (org-cv-local-variables)  -*-
+# -*- eval: (org-local-variables)  -*-
+#+LANGUAGE: en
+#+AUTHOR: Sameer Gupta
+#+TITLE: Resume
+#+EMAIL: jasitis@gmail.com
+# Author vars
+#+LATEX_HEADER: \usepackage{color}
+#+MACRO: color @@latex:{\color{$1}@@$2@@latex:}@@
+
+#+MACRO:contact Email $1, Phone $2, gpg $3, {{{color(red,Social)}}} $4. 
+{{{contact(jasitis@gmail.com,+91-7993110170,1FB20D8EE8067117,u:[[https://emacs.ch/@brokenix][Mastodon]])}}}
+
+#+LATEX_HEADER: \newcommand{\email}{}
+#+LATEX_HEADER: \newcommand{\gpg}{}
+#+OPTIONS: email:t
+#+OPTIONS: toc:nil num:nil
+
 # Latex variables
 #+LaTeX_CLASS: article
 #+LaTeX_CLASS_OPTIONS: [8pt,a4paper]
@@ -20,21 +36,17 @@
 #+LaTeX_HEADER: \setlength{\parindent}{0pt}
 
 # Subtitles
+
 # #+latex_header: \titleformat{\section}{\bfseries}{}{0em}{}[\titlerule]
 # #+LaTeX_HEADER: \titlespacing{\section}{0pt}{5pt}{5pt}
 
-# Header
-#+LaTeX_HEADER: \renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor} \vspace{5pt} \smallbreak \thetitle \end{center}}
-
 # CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 #+CVSTYLE: banking
-# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey'and 'black'
 #+CVCOLOR: black
-#+TITLE:  +91-7993110170
-#+AUTHOR: Sameer Gupta
-#+EMAIL: jasitis@gmail.com
-#+OPTIONS: email:t
-#+OPTIONS: toc:nil num:nil
+
+
+
 * Education
 
 - B.Tech, IIT-Bombay (2006-11)
@@ -42,24 +54,24 @@
 * Skills
 
  Given specified resources for specific goals, I have and can work with a small team and\\
- drive the development to meet the specifications, constrains and agreed  upon resources .
+ drive the development to meet the specifications, constrains and agreed-upon resources .
 * Relevant Experience
 
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
    |---------------+----------------------------------------------------------------------------------|
    | 07/2021-      | *Senior Haskell dev*, Konma -Chennai                                             |
-   |               | I worked with team to pitch for then ideascale .                                 |
+   |               | I worked with team to pitch for then ideascale -                                 |
    |               | funding round and submitted my independent proposal                              |
-   |               | in the next on with the founder .                                                |
+   |               | in the next one with the founder .                                               |
    |               | I used SBC, GPG to focus on network admin, nix                                   |
-   |               | for  reproduible builds and did haskell code review to                           |
+   |               | for  reproducible builds and did haskell code review to                          |
    |               | assure type correctness of code.                                                 |
    |               | I listed many issue and prepared many solutions for                              |
    |               | Cardano.                                                                         |
    |---------------+----------------------------------------------------------------------------------|
    | 12/07-11/2021 | Prototype R&D; New York Based Blockchain cotractor.                              |
    |               | I  Worked on bit blasting and decided to opt for retiming instead of pipelining in SBC ARM and RISC V. |
-   |               | along with local procuremet and asssembly line testing.                          |
+   |               | along with local procuremet and assembly line testing.                           |
    |               |                                                                                  |
    |---------------+----------------------------------------------------------------------------------|
 
@@ -67,16 +79,16 @@
 
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
    |----------------------+--------------------------------------------------------------------+---+---|
-   | Nix/NixOS            | Repl, devenv, subshell,devshell, flake, modules.                   |   |   |
-   |                      | Infra and network. On the way to build for SBC.                    |   |   |
+   | Nix/NixOS            | Repl, devenv, subshell,devshell, flake, guix-nix-overlay, module.  |   |   |
+   |                      | Infra and network, to build for SBC.                               |   |   |
    |----------------------+--------------------------------------------------------------------+---+---|
-   | Bash and Emacslisp   | For CI/CD,Magit-ops.                                               |   |   |
-   |                      | I have demonadtrated and pinned this on My Github                  |   |   |
-   |                      | @carnotweat                                                        |   |   |
+   | Bash,gpg, Emacslisp, | For CI/CD,Magit-ops.Also, orgmode-macro for LaTeX variables.       |   |   |
+   | org, LaTeX           | I have demonstrated & pinned this on                               |   |   |
+   |                      |  {{{color(red,[[https://github.com/carnotweat][Github]])}}}                                                                                                                                                                                                                                                            |   |   |
    |----------------------+--------------------------------------------------------------------+---+---|
    | Type correct haskell | For Haskell-nix builds, contribution,code-review                   |   |   |
    |----------------------+--------------------------------------------------------------------+---+---|
-   | Elisp                | I am confortable at calling, applying functions from any point     |   |   |
-   |                      | I and writing a emacs dsl, to make its keybinds my to my i3-config |   |   |
+   | Elisp                | I am comfortable at calling & applying functions from any point    |   |   |
+   |                      | I am writing a emacs dsl, to make its key-binds my to my i3-config |   |   |
    |----------------------+--------------------------------------------------------------------+---+---|
 

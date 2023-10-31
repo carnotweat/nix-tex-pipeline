@@ -1,0 +1,34 @@
+  (after! ox-latex
+    (add-to-list 'org-latex-classes
+                 '("resume"
+                   "\\documentclass[a4paper,12pt]{report}
+  \\renewcommand{\\chaptername}{Lab}
+  \\makeatletter
+  \\renewcommand{\\maketitle}{
+    \\begin{titlepage}
+      \\begin{center}
+        \\vspace*{2em}
+        \\Huge \\textbf{ASSIGNMENT} \\\\
+        \\vspace{4em}
+        \\Huge \\textbf{\\@title} \\\\
+        \\vspace{4em}
+        \\Large \\textbf{\\@date} \\\\
+        \\bigskip
+        \\Large \\textbf{\\@author} \\\\
+        \\medskip
+        \\large +91-7993110170 \\\\
+        \\bigskip
+        # \\includegraphics[width=16em]{../../logo.png} \\\\
+        \\bigskip
+
+      \\end{center}
+    \\end{titlepage}
+  }
+  \\makeatother
+  \\usepackage[margin=0.7in]{geometry}"
+                   ("\\chapter{%s}" . "\\chapter*{%s}")
+                   ("\\section{%s}" . "\\section*{%s}")
+                   ("\\subsection{%s}" . "\\subsection*{%s}")
+                   ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                   ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                   ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))

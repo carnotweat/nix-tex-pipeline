@@ -1,0 +1,5 @@
+# # custom latex classes
+#   #+TITLE: resume
+#   #+AUTHOR: sameer gupta
+#   #+DATE: January 29, 2021
+#   #+LATEX_CLASS: resume
