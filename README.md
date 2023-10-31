@@ -2,6 +2,7 @@
 
 - ideas is any edit in my org file need be auto pushed here without breaking TeX formatting
 1. Only for my personal use atm, others can check this, but this is not ready to be forked
+2. I have made everything work with org-Macros for latex variables, but I aim to make it resuable for others.
 
 ## what's done
 - tables align
