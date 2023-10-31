@@ -8,13 +8,12 @@
 #+MACRO: color @@latex:{\color{$1}@@$2@@latex:}@@
 
 #+MACRO:contact Email $1, Phone $2, gpg $3, {{{color(red,Social)}}} $4. 
-{{{contact(jasitis@gmail.com,+91-7993110170,1FB20D8EE8067117,u:[[https://emacs.ch/@brokenix][Mastodon]])}}}
+{{{contact($email,$phone,1FB20D8EE8067117,link:social)}}}
 
 #+LATEX_HEADER: \newcommand{\email}{}
 #+LATEX_HEADER: \newcommand{\gpg}{}
 #+OPTIONS: email:t
 #+OPTIONS: toc:nil num:nil
-
 # Latex variables
 #+LaTeX_CLASS: article
 #+LaTeX_CLASS_OPTIONS: [8pt,a4paper]
